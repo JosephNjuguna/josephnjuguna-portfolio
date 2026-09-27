@@ -148,19 +148,19 @@ html {
     box-shadow: 0 10px 30px -5px rgba(0, 0, 128, 0.622);
 }
 
-.projects .projects-card #projects-header {
+.projects .projects-card .projects-header {
     margin: 0;
     padding: 2% 0;
     border-bottom: 1px solid navy;
 }
 
-.projects .projects-card #projects-brief {
+.projects .projects-card .projects-brief {
     margin: 0;
     padding: 5% 0;
     border-bottom: 1px solid grey;
 }
 
-.projects .projects-card #projects-tech {
+.projects .projects-card .projects-tech {
     margin: 0;
     padding: 4% 0;
     color: blue;
