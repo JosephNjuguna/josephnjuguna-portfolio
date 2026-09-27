@@ -5,6 +5,10 @@ body {
     font-optical-sizing: auto;    
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 .nav-bar {
     width: auto;
@@ -101,11 +105,12 @@ body {
 
 
 
-#project-header {
+.project-header {
     text-align: center;
     color: navy;
     margin: 0;
     padding: 2%;
+    scroll-margin-top: 60px;
 }
 
 .projects {
@@ -172,7 +177,7 @@ body {
     flex-direction: column;
     flex: 2;
     padding: 1%;
-}GitHub
+}
 
 .contact .cta h3{
     color: red;
