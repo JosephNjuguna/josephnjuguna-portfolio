@@ -2,11 +2,11 @@ body {
     padding: 0;
     margin: 0;
     font-family: "Quicksand", sans-serif;
-    font-optical-sizing: auto;    
+    font-optical-sizing: auto;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 
@@ -42,9 +42,9 @@ html {
     width: 20%;
 }
 
-.nav-bar ul a:hover{
+.nav-bar ul a:hover {
     padding: 1% 3%;
-    border-radius:15px;
+    border-radius: 15px;
     border-bottom: 5px solid red;
 }
 
@@ -76,8 +76,8 @@ html {
     box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.59);
 }
 
-.aboutme .intro a{
-    border:none;
+.aboutme .intro a {
+    border: none;
     border-radius: 10px;
     background-color: blue;
     color: white;
@@ -168,8 +168,77 @@ html {
 
 
 
+@media all and (max-width: 959px) {
+    .aboutme {
+        display: flex;
+        flex-direction: column;
+        padding: 3%;
+    }
 
-.contact{
+    .aboutme .intro {
+        width: 90%;
+        padding: 5%;
+    }
+
+    .aboutme .intro-img {
+        width: 90%;
+        align-self: center;
+    }
+
+
+
+
+    .skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .skills .skills-card {
+        width: 90%;
+        border-radius: 6px;
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 128, 0.295);
+    }
+
+
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: left;
+    }
+
+    .projects .projects-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2%;
+        width: 90%;
+        margin: 0;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px -5px rgba(0, 0, 128, 0.295);
+    }
+
+    .projects .projects-card:hover {
+        padding: 2%;
+        width: 90%;
+    }
+
+}
+
+/* @media all and (max-width: 479px) {
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+} */
+
+
+
+.contact {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -178,7 +247,7 @@ html {
     margin: 0 4% 5% 4%;
 }
 
-.contact .cta{
+.contact .cta {
     width: 30%;
     display: flex;
     justify-content: left;
@@ -187,22 +256,22 @@ html {
     padding: 1%;
 }
 
-.contact .cta h3{
+.contact .cta h3 {
     color: red;
     padding: 0;
     margin-top: 25%;
 }
 
-.contact .cta h1{
+.contact .cta h1 {
     color: navy;
     padding: 0;
     margin: 1% 0;
 }
 
-.contact .links{
+.contact .links {
     display: flex;
     flex-direction: column;
-    flex:2;
+    flex: 2;
     padding: 1%;
     border-left: 2px solid black;
     border-radius: 20px;
@@ -218,25 +287,25 @@ html {
     color: navy;
 }
 
-.contact .links a span{ 
+.contact .links a span {
     text-align: center;
     font-size: 50px;
-    margin: 0 2% 0 0 ;
+    margin: 0 2% 0 0;
     color: blue;
 }
 
-.contact .links a p{ 
+.contact .links a p {
     color: navy;
 }
 
-.footer{
+.footer {
     padding: 3% 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footer p{
+.footer p {
     color: grey;
     margin: 1%;
 }
