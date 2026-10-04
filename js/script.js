@@ -20,6 +20,29 @@ let projects = [
     }
 ]
 
+
+let testimonials = [
+    {
+        title: "Project: Calculator",
+        testimonials: "This isn’t your average basic calculator. Being able to log calculations with a reason and a timestamp has completely streamlined how I keep track of my quick estimates and everyday math. It’s clean, intuitive, and the HTML/CSS/JS implementation is buttery smooth!",
+        client: "- A Satisfied User"
+    },
+
+    {
+        title: "Weather App",
+        testimonials: "A brilliant weather tool! Beyond just giving me the current conditions, knowing the exact sunrise and sunset times has made it my go-to app for planning my outdoor runs and daily schedule. The interface is gorgeous and lightning-fast.",
+        client: "Daily Weather Checker"
+    },
+
+    {
+        title: "Expenses/Goals tracker",
+        testimonials: "This tracker has been a game-changer for my budgeting. Being able to store receipts, automatically pull out key info, and neatly organize everything by date and location—while effortlessly calculating totals—saved me hours of manual bookkeeping. Incredible work for a frontend project!",
+        client: "Small Business Owner / Freelancer"
+    }
+]
+
+
+
 const skillsContainer = document.getElementById("skills-container");
 skills.forEach(skill => {
     const card = document.createElement("div");
@@ -43,3 +66,16 @@ projects.forEach(project => {
     `;
     projectsContainer.appendChild(card);
 });
+
+const testimonialsContainer = document.getElementById("testimonials-container");
+testimonials.forEach(testimonials => {
+    const card = document.createElement("div");
+    card.className = "testimonials-card";
+    card.innerHTML = `
+        <h3 class="testimonials-header">${testimonials.title}</h3>
+        <p class="testimonials-brief">${testimonials.testimonials}</p>
+        <p class="testimonials-tech">${testimonials.client}</p>
+    `;
+    testimonialsContainer.appendChild(card);
+});
+
