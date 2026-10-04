@@ -29,7 +29,7 @@ html {
 }
 
 .nav-bar ul {
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -99,6 +99,7 @@ html {
     flex-direction: row;
     justify-content: space-around;
     padding: 0 3% 5% 3%;
+    width: auto;
 }
 
 .skills .skills-card {
@@ -123,6 +124,7 @@ html {
 
 .projects {
     display: flex;
+    width: auto;
     flex-direction: row;
     padding: 1% 3% 5% 3%;
     justify-content: space-around;
@@ -168,6 +170,46 @@ html {
 
 
 
+
+
+.testimonial-header{
+    text-align: center;
+}
+
+.testimonials{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: auto;
+}
+
+.testimonials  .testimonials-card{
+    margin: 2%;
+    background-color: navy;
+    width: 30%;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.testimonials .testimonials-header{
+    color: red;
+}
+
+.testimonials .testimonials-brief{
+    color: white;
+    /* height: 140px; */
+    padding: 5% 0;
+}
+
+.testimonials .testimonials-client{
+    text-align: end;
+    font-style: italic;
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+
+
 @media all and (max-width: 959px) {
     .aboutme {
         display: flex;
@@ -191,6 +233,7 @@ html {
     .skills {
         display: flex;
         flex-direction: column;
+        width: auto;
     }
 
     .skills .skills-card {
@@ -204,7 +247,7 @@ html {
     .projects {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: auto;
         justify-content: left;
     }
 
@@ -213,7 +256,7 @@ html {
         flex-direction: column;
         justify-content: space-around;
         padding: 2%;
-        width: 90%;
+        width: 95%;
         margin: 0;
         border-radius: 15px;
         box-shadow: 0 10px 30px -5px rgba(0, 0, 128, 0.295);
@@ -224,17 +267,38 @@ html {
         width: 90%;
     }
 
+    .testimonial-header{
+        text-align: center;
+    }
+
+    .testimonials{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5%;
+        width: auto;
+    }
+
+    .testimonials  .testimonials-card{
+        margin: 2% 0;
+        background-color: navy;
+        width: 95%;
+        padding: 3%;
+        border-radius: 15px;
+    }
+
+    .testimonials .testimonials-card .testimonials-brief{
+        color: white;
+        height: 100px;
+    }
+
+    .testimonials .testimonials-client{
+        text-align: end;
+        font-style: italic;
+        color: greenyellow;
+    }
+
 }
-
-/* @media all and (max-width: 479px) {
-    .desktop {
-        display: none;
-    }
-
-    .mobile {
-        display: block;
-    }
-} */
 
 
 
