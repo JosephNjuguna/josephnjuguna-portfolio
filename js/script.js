@@ -25,7 +25,7 @@ let testimonials = [
     {
         title: "Project: Calculator",
         testimonials: "This isn’t your average basic calculator. Being able to log calculations with a reason and a timestamp has completely streamlined how I keep track of my quick estimates and everyday math. It’s clean, intuitive, and the HTML/CSS/JS implementation is buttery smooth!",
-        client: "- A Satisfied User"
+        client: "A Satisfied User"
     },
 
     {
