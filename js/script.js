@@ -73,8 +73,9 @@ testimonials.forEach(testimonials => {
     card.className = "testimonials-card";
     card.innerHTML = `
         <h3 class="testimonials-header">${testimonials.title}</h3>
+        <hr/>
         <p class="testimonials-brief">${testimonials.testimonials}</p>
-        <p class="testimonials-tech">${testimonials.client}</p>
+        <p class="testimonials-client">${testimonials.client}</p>
     `;
     testimonialsContainer.appendChild(card);
 });
